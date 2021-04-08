@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js - welcome aboard challenge</title>
+  <script src="./data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- vue content will bee injected here, tada ! -->
+  </div>
+
+  <script>
+  new Vue ({
+    el: '#app',
+    
+    // You should change that
+    template: `<div>{{ { dreamTeam, column, tags, tickets } }}</div>`,
+
+    data: {
+      ...data
+    }
+
+    // Let's go baby...
+  })
+  </script>
+</body>
+</html>
